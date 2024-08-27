@@ -2,8 +2,6 @@
 
 $db = new SQLite3('./database.db');
 
-$db->exec("CREATE TABLE IF NOT EXISTS Names (name varchar(16))");
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	$name = $_POST["name"];
 

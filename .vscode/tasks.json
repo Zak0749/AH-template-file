@@ -7,6 +7,11 @@
             "label": "php",
             "type": "shell",
             "command": "php -S localhost:8080"
+        },
+        {
+            "label": "Setup Db",
+            "type": "shell",
+            "command": "rm database.db; sqlite3 database.db < schema.sql"
         }
     ]
 }
